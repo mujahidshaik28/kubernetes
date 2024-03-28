@@ -17,3 +17,16 @@ spec:
         image: mujahid28/wordpress:latest
         ports:
         - containerPort: 80
+        env: 
+        - name: WORDPRESS_DB_HOST
+          value: db
+        - name: WORDPRESS_DB_USER
+          value: mujahid
+        - name: WORDPRESS_DB_PASSWORD
+          value: admin123
+        - name: WORDPRESS_DB_NAME
+          value: wordpress
+    ports:
+      - "80:80"
+    restart: always
+   
