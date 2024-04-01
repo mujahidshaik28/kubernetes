@@ -26,3 +26,16 @@ spec:
           value: admin123
         - name: WORDPRESS_DB_NAME
           value: wordpress
+      - name: mysql
+        image: mysql:latest
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: Mujahidjani#28
+        - name: MYSQL_DATABASE
+          value: wordpress
+        - name: MYSQL_USER
+          value: mujahid
+        - name: MYSQL_PASSWORD
+          value: admin123
+        - name: MYSQL_HOST
+          value: mysql
